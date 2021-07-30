@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    /* zoom: 97.5% */
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #AEE6E6;
+}
+
+.form-control{
+    display: inline-block;
+    width: auto;
+    
+    
+}
+
+.task-input {
+    margin-top: 5%;
+    width: 25%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    border: solid;
+    border-radius: 1%;
+    border-width: 1px;
+    padding: 20px;
+    margin: 5% 20px 0px 20px;
+    background-color: #FBF6F0;
+}
+
+.task-input span, button, p, label{
+    padding: 0.5%;
+}
+
+
+#task-display{
+    width: 50%;
+    /* display: flex; */
+    /* float: right; */
+    margin-top: 5%;
+    /* flex-direction: column; */
+    background-color: #FFDA77;
+    border-radius: 1%;
+    min-height: 100vh;
+    border: solid 1px black;
+}
+
+.tasks{
+    display: flex;
+}
+
+#task-display li{
+    /* padding: 1%; */
+    background-color: #FFDA77;
+    display: flex;
+    flex-direction: column;
+ 
+    
+}
+.taskbar{
+    background: #FBF6F0;
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5%;
+    background-image: url();
+}
+
+.nav a{
+    font-weight: bolder;
+    font-size: xx-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.tasks-list{
+    display: flex;
+    align-content: space-between;
+}
+
+p input{
+    word-wrap    : break-word;
+overflow-wrap: break-word;
+
+}
+.tasks-list button{
+    display: block;
+}
+
+.task-input input{
+    width: 100%;
+    height: 10vh;
+    align-content: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    overflow-wrap: break-word;
+    overflow: scroll;  
+}
+
+#flexwrap{
+    overflow-wrap: break-word;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="todo.css">
+    <title>ToDoList</title>
+</head>
+<body >
+    <div class="nav d-flex align-items-center justify-content-center taskbar">
+        <nav class="navbar navbar-light navbar-expand-lg navbar-light ">
+            <a class="navbar-brand font-weight-bold" href="#">TODO/TASK MANAGEMENT PORTAL</a>
+        </nav>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search Task" aria-label="Search">
+            <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+             
+        </form>
+        
+    </div>
+    
+    <div class="tasks">
+        
+        <div class="task-input shadow-lg p-3 mb-5 rounded  " >
+            <div id="personalizer">
+            <span id="username">Hey there! What's your name?<input class="form-control mr-sm-2" type="text" name="username"/></span>
+            <button class="btn-primary btn-outline-success my-2 my-sm-0" type="submit" id="personal-presser" type="button" onclick="storeName()">Save</button>
+            </div>
+            <div class="tasks-list">
+            <form id="todo-form" class="form-inline" >
+            <p>What do you want to do? <input class="form-control mr-sm-2" type="text" name="task"/></p>
+            <div class="invalid-feedback">
+                Task input cannot empty.
+              </div>
+            <label class="my-1 mr-2" for="inlineFormCustomSelectPref priority">Select a priority</label>
+             <select class="custom-select my-1 mr-sm-2 btn btn-outline-secondary" id="inlineFormCustomSelectPref priority-select" name="priority" > 
+                <option>Low</option>
+                <option>Medium</option>
+                <option>High</option>
+            </select>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Save task</button>
+            </form>
+            </div>
+        </div>
+    
+        <div id="task-display" class="shadow-lg p-3 mb-5 rounded ">
+            <h1>TASKS & TO-DOs</h1><hr>
+
+        </div>
+    </div>
+    <script src="todo.js">
+
+    </script>
+</body>
+</html>
